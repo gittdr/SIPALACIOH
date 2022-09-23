@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="PALACIOH.exe" version="1.0.0.3" publicKeyToken="ec46da299c3dd033" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="PALACIOH" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="PALACIOH.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- Opciones del manifiesto UAC
+             Si quiere cambiar el nivel del Control de cuentas de usuario de Windows reemplace el 
+             nodo requestedExecutionLevel por uno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Especificar el elemento requestedExecutionLevel deshabilitará la virtualización de archivos y registros. 
+            Quite este elemento si la aplicación necesita esta virtualización para la compatibilidad
+            con versiones anteriores.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="512000">
+      <assemblyIdentity name="Newtonsoft.Json" version="6.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>OxV/r0K4/V0U2+bLjmfF3v7jrg47d/MyeGpEY3/tzSU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PALACIOH.exe" size="79336">
+      <assemblyIdentity name="PALACIOH" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>YeURWNBQgtGUN3S7S1w0i2vIjGibFJ02U2BK+XUz710=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RestSharp.dll" size="167936">
+      <assemblyIdentity name="RestSharp" version="105.1.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>WJufygC/0ScVUvow/cA7UlAaI5Q5U0nHI+aWyQlYrwc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Tamir.SharpSSH.dll" size="212992">
+      <assemblyIdentity name="Tamir.SharpSSH" version="1.1.1.13" language="neutral" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>htQsNJgDZNZQLxm6zeZ21Pg8IAeM2uVT30+9qJjewsk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="PALACIOH.exe.config" size="2435">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Gv3nn+F1ATesACBug/elxduu1Sn0ZugN4LmcKU2NhO8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- Una lista de las versiones de Windows en la que se ha probado esta aplicación y
+           con la que se ha diseñado para que trabaje. Quite la marca de comentario de los elementos adecuados y Windows seleccionará 
+           automáticamente el entorno más compatible. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=DESKTOP-CV57FOU\Lenovo" issuerKeyHash="f31eba947827f0d13c89ef306d9a0a6fa1a50dc2" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>zTHwupugQb8vR7Ey1MUxmnn4LbP7Lt5qGifU+3JNjZk=</DigestValue></Reference></SignedInfo><SignatureValue>r3rd2S1M1N9iOhp6ogdEfkHM+m4zeKfTItZKkPficiSrkwBsLnjxde9LMr36H1doMcd3iBj9nIM3AyPcN+9TO2keIZ3Bc9nkl23GvjXref0fZO15dvwybwYrr7dPjCtirVqDQc/OpWU99iGqAX12QOPLjjNiRpzKlecZq+mDx1c=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>6NRVwkBiczZg9JXs2qelCCQp3G3qAWNfM/9eSPI2Hi2Q2tYqFvt5avGNplMuKDwJz8jVbkbmvhPgKxoc9JzeFuvCn6d1+FjtIfnL6U4gQ4JspH/tUmE5mrhIt/Y0pXD4uB7NJhg0S0qb8/OO72LuqQyVmx3czQT/ZAL0s18M3i0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="998d4d72fbd4271a6ade2efbb32df8799a31c5d432b1472fbf41a09bbaf031cd" Description="" Url=""><as:assemblyIdentity name="PALACIOH.exe" version="1.0.0.3" publicKeyToken="ec46da299c3dd033" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-CV57FOU\Lenovo</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>6oGAMkHOqZ9zTy7g0iTdP+6BFHsyagWg2Pxqj5d8E9s=</DigestValue></Reference></SignedInfo><SignatureValue>UEnap/AmXb8M7sq/AwMma8/gMuIJH8J/lBwaxnWqWBdXV//A5X+ajJAMCYTBbblD102HXD2qepxrWg5e8skHo/IWCcivNPpyayjqq16qcVrrdHEDI/h6NzIZzFozrTqX7wTigouypl+8xvS3P/Es6f3KJAvsXwAVYZFGfY7pEnQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>6NRVwkBiczZg9JXs2qelCCQp3G3qAWNfM/9eSPI2Hi2Q2tYqFvt5avGNplMuKDwJz8jVbkbmvhPgKxoc9JzeFuvCn6d1+FjtIfnL6U4gQ4JspH/tUmE5mrhIt/Y0pXD4uB7NJhg0S0qb8/OO72LuqQyVmx3czQT/ZAL0s18M3i0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB8TCCAVqgAwIBAgIQWDxwFbdIRZZB7LFBZgtDCzANBgkqhkiG9w0BAQsFADA3MTUwMwYDVQQDHiwARABFAFMASwBUAE8AUAAtAEMAVgA1ADcARgBPAFUAXABMAGUAbgBvAHYAbzAeFw0yMjA4MjYxODE2NTBaFw0yMzA4MjcwMDE2NTBaMDcxNTAzBgNVBAMeLABEAEUAUwBLAFQATwBQAC0AQwBWADUANwBGAE8AVQBcAEwAZQBuAG8AdgBvMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDo1FXCQGJzNmD0lezap6UIJCncbeoBY18z/15I8jYeLZDa1ioW+3lq8Y2mUy4oPAnPyNVuRua+E+ArGhz0nN4W68Kfp3X4WO0h+cvpTiBDgmykf+1SYTmauEi39jSlcPi4Hs0mGDRLSpvz847vYu6pDJWbHdzNBP9kAvSzXwzeLQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAL9LRG1bTj+zNmePPB4xxz5ftuzPOctG+J5gGQd+Ebc7mg/bFHqLqIbibgP+6T9nQJiu6Yr6LIZBt4HymrH3jf+J6iN5xnm65VlZQ+nEhOUWupODfSuHcorj3K9/JG+wNBDdUSCGVTJ8TqWeSdjdARkjPi/8nSCBg8p4b+Ug7dil</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
