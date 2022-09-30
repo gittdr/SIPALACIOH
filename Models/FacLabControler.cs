@@ -31,6 +31,10 @@ namespace PALACIOH.Models
         {
             return this.modelFact.GetSegJr(leg);
         }
+        public DataTable SelectLegHeaderOnly(string orseg)
+        {
+            return this.modelFact.SelectLegHeaderOnly(orseg);
+        }
         public void InsertOrderReport(string rorderh, string leg, string gbilto, string tipom, string rfecha)
         {
             this.modelFact.InsertOrderReport(rorderh, leg, gbilto, tipom, rfecha);
